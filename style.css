@@ -1,0 +1,274 @@
+/* General Styling */
+body {
+    margin: 0;
+    background-color: #121212; /* Very dark background for a modern, sleek look */
+    color: #e0e0e0; /* Light grey text for readability */
+    font-family: 'Arial', sans-serif; /* Clean and simple font */
+    line-height: 1.6;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 800px; /* Max width for better readability */
+    padding: 0 15px;
+}
+
+h1, h2, h3, p {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 2.5em;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2a2a; /* Dark grey for header */
+    color: #e0e0e0; /* Light grey text for better contrast */
+    padding: 0 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for header */
+}
+
+header h3 {
+    font-size: 1.6em;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding-left: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: #4caf50; /* Green for links to make them stand out */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ffffff; /* White on hover for better visibility */
+    transform: translateY(-3px); /* Hover effect for links */
+}
+
+/* Footer Styles */
+footer {
+    padding: 30px 0;
+    color: #bbbbbb; /* Slightly lighter grey footer text */
+    background-color: #2a2a2a; /* Consistent with header */
+    text-align: center;
+}
+
+footer a {
+    color: #888888; /* Muted grey for footer links */
+}
+
+footer nav ul {
+    justify-content: space-evenly;
+    display: flex;
+    padding: 0;
+}
+
+footer nav ul li {
+    padding: 0;
+}
+
+/* Content Section Styles */
+.about-section, .projects-section, .project-item {
+    margin-bottom: 40px;
+}
+
+/* Section styling with shadow and padding */
+.about-section {
+    background-color: #333333; /* Slightly lighter dark color */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.about-section:hover {
+    transform: translateY(-5px); /* Hover effect to lift the section */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+.about-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    color: #bbb;
+}
+
+/* About List */
+.about-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-section ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+
+/* Projects Section */
+.projects-section, .skills-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #333333; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.projects-section:hover, .skills-section:hover {
+    transform: translateY(-5px); /* Hover effect to lift the section */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+.skills-section ul, .projects-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-section li, .projects-section li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.skills-section li, .projects-section li {
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Project Item */
+.project-item {
+    background-color: #444444; /* Darker background for project items */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+.project-item:hover {
+    transform: translateY(-5px); /* Hover effect to lift the item */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.project-item h4 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1.1em;
+    color: #bbb;
+}
+
+/* Image Styling */
+figure {
+    margin: 20px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+figure:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+img {
+    width: 80%; /* Adjusted image width */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #bbbbbb;
+}
+
+/* Input and Form Styles */
+input, textarea {
+    margin-bottom: 10px;
+    background-color: #333333; /* Dark input background */
+    color: #e0e0e0; /* Light grey input text */
+    border: 1px solid #444444;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:hover, textarea:hover {
+    transform: scale(1.03); /* Slight scaling effect on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul {
+        justify-content: center;
+    }
+
+    li {
+        padding-left: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .project-item {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}
