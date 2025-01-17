@@ -46,6 +46,12 @@ header {
     color: #e0e0e0; /* Light grey text for better contrast */
     padding: 0 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for header */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+header:hover {
+    background-color: #333333; /* Slightly lighter on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
 }
 
 header h3 {
@@ -102,7 +108,7 @@ footer nav ul li {
 }
 
 /* Section styling with shadow and padding */
-.about-section {
+.about-section, .projects-section {
     background-color: #333333; /* Slightly lighter dark color */
     padding: 20px;
     border-radius: 8px; /* Rounded corners */
@@ -110,67 +116,31 @@ footer nav ul li {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.about-section:hover {
+.about-section:hover, .projects-section:hover {
     transform: translateY(-5px); /* Hover effect to lift the section */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
 }
 
-.about-section h2 {
+.about-section h2, .projects-section h2 {
     font-size: 1.8em;
     margin-bottom: 15px;
 }
 
-.about-section p {
+.about-section p, .projects-section p {
     font-size: 1.2em;
     color: #bbb;
 }
 
 /* About List */
-.about-section ul {
+.about-section ul, .projects-section ul {
     list-style: none;
     padding: 0;
 }
 
-.about-section ul li {
+.about-section ul li, .projects-section ul li {
     font-size: 1.2em;
     margin-bottom: 10px;
     padding-left: 15px;
-    position: relative;
-}
-
-/* Projects Section */
-.projects-section, .skills-section {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background-color: #333333; /* Light background for contrast */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.projects-section:hover, .skills-section:hover {
-    transform: translateY(-5px); /* Hover effect to lift the section */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
-}
-
-.skills-section ul, .projects-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.skills-section li, .projects-section li {
-    margin-bottom: 15px;
-    font-size: 1.1em;
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.skills-section li, .projects-section li {
-    padding-left: 20px;
     position: relative;
 }
 
